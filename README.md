@@ -1,1 +1,1 @@
-# Source Code for JewelEyed.com
+# JewelEyed.com Source Code
