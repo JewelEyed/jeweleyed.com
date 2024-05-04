@@ -1,0 +1,50 @@
+---
+const today = new Date();
+---
+
+<footer class="w-full flex items-center justify-center bg-[#241b23]">
+  <div
+    id="more"
+    transition:name="window"
+    class="w-full bg-[#151515] text-white relative border-4 border-white rounded-md drop-shadow-md"
+  >
+    <div
+      class="w-full bg-black p-1 flex items-center justify-around gap-1 right-1 top-1"
+    >
+      <span class="pl-1">footer.sh</span>
+      <div class="w-full flex items-center justify-end gap-1 right-1 top-1">
+        <div
+          class="w-4 h-4 rounded-full cursor-pointer transition-all hover:brightness-75 flex items-center justify-center text-sm text-green-500 hover:text-black font-bold bg-green-500"
+        >
+          +
+        </div>
+        <div
+          class="w-4 h-4 rounded-full cursor-pointer transition-all hover:brightness-75 flex items-center justify-center text-sm text-yellow-500 hover:text-black font-bold bg-yellow-500"
+        >
+          -
+        </div>
+        <div
+          class="w-4 h-4 rounded-full cursor-pointer transition-all hover:brightness-75 flex items-center justify-center text-sm text-red-500 hover:text-black font-bold bg-red-500"
+        >
+          ⤫
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col items-center p-6 w-full h-full text-2xl font-bold">
+        <div class="flex gap-3 items-center text-sm">
+            <a href="/">Home</a>
+            <a href="/post/licenses">Licenses</a>
+        </div>
+      <span class="flex items-center gap-1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" {...$$props}>
+            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M14.83 14.83a4 4 0 1 1 0-5.66" />
+            </g>
+        </svg>
+        {today.getFullYear()} JewelEyed.
+      </span>
+    </div>
+  </div>
+</footer>
