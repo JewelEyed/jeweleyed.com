@@ -78,6 +78,21 @@
           />
         </a>
         <a
+        href="https://mastodon.social/@jeweleyed"
+        target="_blank"
+        rel="me"
+        aria-label="Mastodon"
+        class="hover:rotate-[-360deg] transition-all duration-700 hover:hue-rotate-180 w-10 h-10 p-2 hover:p-0 drop-shadow-lg"
+      >
+        <img
+          src="./assets/mastodon.svg"
+          alt="Mastodon Social Logo"
+          data-aos="zoom-in"
+          data-aos-delay="1000"
+          class="w-full h-full"
+        />
+      </a>
+        <a
           href="https://www.reddit.com/u/jewel_eyed"
           target="_blank"
           aria-label="Reddit"
