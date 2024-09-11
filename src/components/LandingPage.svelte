@@ -24,7 +24,7 @@
   >
     <div class="flex justify-center flex-col items-center">
       <div
-        class="flex justify-center text-transparent transition-all w-full text-4xl group"
+        class="flex relative justify-center text-transparent transition-all w-full text-4xl group"
       >
         <h1
           data-aos="fade-right"
@@ -40,14 +40,24 @@
         >
           Eyed
         </h1>
+        <a
+        href="https://en.pronouns.page/@jeweleyed"
+      data-aos="fade-left"
+      data-aos-delay="400"
+      target="_blank"
+      class="text-sm absolute -top-3 -right-3 rotate-45 ui-small:text-xl text-opacity-50 transition-all text-white group-hover:text-gray-200 font-bold drop-shadow-lg"
+    >
+      she/her
+      </a>
       </div>
-      <h1
+      
+      <h2
         data-aos="fade-up"
         data-aos-delay="600"
-        class="ui-huge:text-4xl uir-large:text-3xl uir-medium:text-2xl ui-small:text-xl pt-4 text-opacity-50 transition-all text-white group-hover:text-gray-200 font-bold drop-shadow-lg"
+        class="ui-huge:text-4xl uir-large:text-3xl uir-medium:text-2xl ui-small:text-xl pt-2 text-opacity-50 transition-all text-white group-hover:text-gray-200 font-bold drop-shadow-lg"
       >
         Making cool(ish) shit
-      </h1>
+      </h2>
       <div class="flex">
         <a
           href="https://discordapp.com/users/1143926569367253072"
