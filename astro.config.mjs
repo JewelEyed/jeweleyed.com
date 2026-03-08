@@ -1,18 +1,14 @@
-import { defineConfig } from 'astro/config';
-import tailwind from "@astrojs/tailwind";
-import vercel from '@astrojs/vercel/serverless';
-import mdx from '@astrojs/mdx';
+import { defineConfig } from "astro/config";
+import mdx from "@astrojs/mdx";
 
-import svelte from "@astrojs/svelte";
+import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), svelte(), mdx()],
-  output: 'server',
-  adapter: vercel({
-    webAnalytics: {
-      enabled: true,
-    },
-    maxDuration: 4,
-  }),
+  site: "https://jeweleyed.com",
+  integrations: [mdx(), sitemap()],
+  server: {
+    port: 3000,
+    host: true,
+  },
 });
