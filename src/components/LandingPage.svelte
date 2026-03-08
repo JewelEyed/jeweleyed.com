@@ -30,28 +30,31 @@
     >
         <div class="flex justify-center flex-col items-center">
             <div
-                class="flex relative justify-center text-transparent transition-all w-full text-4xl group"
+                class="flex relative justify-center max-md:flex-col max-md:items-center text-transparent transition-all text-4xl group"
             >
-                <h1
-                    data-aos="fade-right"
-                    data-aos-delay="100"
-                    class="ransition-all text-white font-bold ui-huge:text-8xl uir-large:text-5xl uir-medium:text-4xl ui-small:text-3xl drop-shadow-lg"
-                >
-                    Jewel
-                </h1>
-                <h1
-                    data-aos="fade-left"
-                    data-aos-delay="400"
-                    class="transition-all text-white font-bold ui-huge:text-8xl uir-large:text-5xl uir-medium:text-4xl ui-small:text-3xl drop-shadow-lg"
-                >
-                    Eyed
-                </h1>
+                <div class="flex">
+                    <h1
+                        data-aos="fade-right"
+                        data-aos-delay="100"
+                        class="transition-all text-white font-bold md:text-[6vw] max-md:text-4xl drop-shadow-lg"
+                    >
+                        Jewel
+                    </h1>
+                    <h1
+                        data-aos="fade-left"
+                        data-aos-delay="400"
+                        class="transition-all text-white font-bold md:text-[6vw] max-md:text-4xl drop-shadow-lg"
+                    >
+                        Eyed
+                    </h1>
+                </div>
                 <a
                     href="https://en.pronouns.page/@jeweleyed"
                     data-aos="fade-left"
                     data-aos-delay="400"
                     target="_blank"
-                    class="text-sm absolute -top-3 -right-3 rotate-45 ui-small:text-xl text-opacity-50 transition-all text-white group-hover:text-gray-200 font-bold drop-shadow-lg"
+                    style="right: -3vw; top: -1vw;"
+                    class="text-sm md:absolute md:rotate-45 md:text-[2vw] max-md:text-sm text-opacity-50 transition-all text-white group-hover:text-gray-200 font-bold drop-shadow-lg"
                 >
                     she/her
                 </a>
@@ -60,7 +63,7 @@
             <h2
                 data-aos="fade-up"
                 data-aos-delay="600"
-                class="ui-huge:text-4xl uir-large:text-3xl uir-medium:text-2xl ui-small:text-xl pt-2 text-opacity-50 transition-all text-white group-hover:text-gray-200 drop-shadow-lg"
+                class="ui-huge:text-4xl uir-large:text-3xl uir-medium:text-2xl ui-small:text-xl md:pt-2 text-opacity-50 transition-all text-white group-hover:text-gray-200 drop-shadow-lg"
             >
                 making silly things :3
             </h2>

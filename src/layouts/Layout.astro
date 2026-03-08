@@ -2,50 +2,58 @@
 import { ViewTransitions } from "astro:transitions";
 
 interface Props {
-  title: string;
-  image: string | undefined;
+    title: string;
+    image: string | undefined;
 }
 
 const { title, image } = Astro.props;
+import "../styles/global.css";
 ---
 
 <!doctype html>
 <html lang="en">
-  <head>
-	<link rel="stylesheet" href="/styles/global.css"/> 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,900;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <meta charset="UTF-8" />
-    <meta name="keywords" content="jeweleyed jewel obbie developer about bio" />
-    <meta
-      name="description"
-      content="JewelEyed's blog, project list, and social media links."
-    />
-    <meta name="author" content="JewelEyed" />
-    <meta property="og:image" content={!image ? "/favicon.png" : image} />
-    <meta name="twitter:image" content={!image ? "/favicon.png" : image} />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="JewelEyed.com" />
-    <meta property="og:title" content="JewelEyed's Website" />
-    <meta
-      property="og:description"
-      content="JewelEyed's blog, project list, and social media links."
-    />
-    <link rel="icon" type="image/png" href={!image ? "/favicon.png" : image} />
-    <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
-    <ViewTransitions />
-  </head>
-  <body transition:animate="initial" class="overflow-x-none font-[nunito]">
-    <slot />
-  </body><noscript>
-    For full functionality of this site it is necessary to enable JavaScript.
-    Here are the <a href="https://www.enable-javascript.com/">
-      instructions how to enable JavaScript in your web browser</a
-    >.
-  </noscript>
+    <head>
+        <link rel="stylesheet" href="/styles/global.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,900;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <meta charset="UTF-8" />
+        <meta
+            name="keywords"
+            content="jeweleyed jewel obbie developer about bio"
+        />
+        <meta
+            name="description"
+            content="JewelEyed's blog, project list, and social media links."
+        />
+        <meta name="author" content="JewelEyed" />
+        <meta property="og:image" content={!image ? "/favicon.png" : image} />
+        <meta name="twitter:image" content={!image ? "/favicon.png" : image} />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="JewelEyed.com" />
+        <meta property="og:title" content="JewelEyed's Website" />
+        <meta
+            property="og:description"
+            content="JewelEyed's blog, project list, and social media links."
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            href={!image ? "/favicon.png" : image}
+        />
+        <meta name="generator" content={Astro.generator} />
+        <title>{title}</title>
+        <ViewTransitions />
+    </head>
+    <body transition:animate="initial" class="overflow-x-none font-[nunito]">
+        <slot />
+    </body><noscript>
+        For full functionality of this site it is necessary to enable
+        JavaScript. Here are the <a href="https://www.enable-javascript.com/">
+            instructions how to enable JavaScript in your web browser</a
+        >.
+    </noscript>
 </html>
