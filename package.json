@@ -17,7 +17,7 @@
   "scripts": {
     "build": "astro build",
     "preview": "astro preview",
-    "start": "astro dev",
+    "start": "npx serve dist",
     "dev": "astro dev"
   }
 }
